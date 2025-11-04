@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository summarizes the research presented at the **2025 IEEE International Conference on Intelligent Computer Communication and Processing (ICCP)**, held in **Cluj-Napoca, Romania, October 16–18, 2025**.
+This repository summarizes the research presented at the **2025 IEEE International Conference on Intelligent Computer Communication and Processing (ICCP)**, held in **Cluj-Napoca, Romania, October 16-18, 2025**.
 The paper proposes a **speaker anonymization pipeline** combining **Generative Adversarial Networks (GANs)**, **prosody transfer**, and a **speech-to-text-to-speech (S2T2S)** architecture.
 
 The complete publication can be found in `Speaker_Anonymization_GAN_Artificial_Embeddings_Prosody_Transfer.pdf`.
@@ -16,8 +16,8 @@ A **multi-speaker TTS model** is driven by:
 
 The GAN learns the statistical distribution of real speaker embeddings but generates vectors unrelated to any real identity.
 Experimental results show:
-- **Low cosine similarity** between original and anonymized embeddings (≈0.12–0.14)
-- **Consistent diversity** among anonymized voices (≈0.14–0.16)
+- **Low cosine similarity** between original and anonymized embeddings (≈0.12-0.14)
+- **Consistent diversity** among anonymized voices (≈0.14-0.16)
 - **Good prosody retention**, with intelligibility rated at MOS ≈ 3.6
 
 The proposed approach represents a balance between **speaker privacy** and **linguistic fidelity**.
@@ -56,13 +56,13 @@ The proposed approach represents a balance between **speaker privacy** and **lin
 
 | Metric | Description | Result |
 |--------|--------------|--------|
-| **Cosine Similarity (orig–anon)** | Mean distance between embeddings | 0.12–0.14 |
-| **Cosine Similarity (anon–anon)** | Diversity among synthetic voices | 0.14–0.16 |
+| **Cosine Similarity (orig-anon)** | Mean distance between embeddings | 0.12-0.14 |
+| **Cosine Similarity (anon-anon)** | Diversity among synthetic voices | 0.14-0.16 |
 | **WER (Original)** | Word Error Rate for original ASR | 5.45% |
 | **WER (Anonymized)** | Word Error Rate for anonymized ASR | 37.74% |
-| **MOS** | Intelligibility (1–5 scale) | 3.59 ± 0.14 |
-| **PESQ** | Perceptual quality (1–5) | ~2.7 |
-| **STOI** | Intelligibility (0–1) | 0.55–0.95 |
+| **MOS** | Intelligibility (1-5 scale) | 3.59 ± 0.14 |
+| **PESQ** | Perceptual quality (1-5) | ~2.7 |
+| **STOI** | Intelligibility (0-1) | 0.55-0.95 |
 
 ## Technologies and Frameworks
 
@@ -79,7 +79,7 @@ The proposed approach represents a balance between **speaker privacy** and **lin
 - Integration of **prosody transfer** onto fully synthetic voices
 - Implementation tailored for **Romanian language**, filling a gap in multilingual anonymization research
 - **Visualization dashboard** for pitch and embedding comparison
-- Achieved anonymization–naturalness trade-off suitable for privacy-preserving communication
+- Achieved anonymization-naturalness trade-off suitable for privacy-preserving communication
 
 ## Experimental Evaluation
 
@@ -101,12 +101,12 @@ If you reference this work, please cite:
 
 **Dumitru-Cosmin Melinte and Mircea Giurgiu**,
 “*Speaker Anonymization via GAN-driven Artificial Embeddings and Prosody Transfer*,”
-*Proc. 2025 IEEE International Conference on Intelligent Computer Communication and Processing (ICCP)*, Cluj-Napoca, Romania, October 16–18, 2025.
+*Proc. 2025 IEEE International Conference on Intelligent Computer Communication and Processing (ICCP)*, Cluj-Napoca, Romania, October 16-18, 2025.
 IEEE, 2025.
 
 ## File
 
-- `Speaker_Anonymization_GAN_Artificial_Embeddings_Prosody_Transfer.pdf` – Full paper (IEEE format)
+- `Speaker_Anonymization_GAN_Artificial_Embeddings_Prosody_Transfer.pdf` - Full paper (IEEE format)
 
 ---
 
