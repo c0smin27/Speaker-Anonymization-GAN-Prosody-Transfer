@@ -27,30 +27,30 @@ The proposed approach represents a balance between **speaker privacy** and **lin
 **Pipeline overview:**
 
 1. **Automatic Speech Recognition (ASR)**
- - Implemented with **OpenAI Whisper** (Romanian model).
- - Extracts linguistic content, removing voice-specific cues.
+ - Implemented with **OpenAI Whisper** (Romanian model)
+ - Extracts linguistic content, removing voice-specific cues
 
 2. **Prosody Extraction**
- - Retrieves pitch (F0), energy, and duration using **Librosa** and **Parselmouth**.
- - Enables natural prosody cloning in the anonymized voice.
+ - Retrieves pitch (F0), energy, and duration using **Librosa** and **Parselmouth**
+ - Enables natural prosody cloning in the anonymized voice
 
 3. **Speaker Embedding Extraction**
- - Performed with **ECAPA-TDNN** via **SpeechBrain**.
- - Provides real embeddings for GAN training.
+ - Performed with **ECAPA-TDNN** via **SpeechBrain**
+ - Provides real embeddings for GAN training
 
 4. **GAN-based Embedding Generation**
- - Custom **Wasserstein GAN with Gradient Penalty (WGAN-GP)**.
- - Generates 192-dimensional synthetic embeddings from a 64-dimensional latent space.
- - Includes **diversity loss** to avoid mode collapse.
- - Trained on **Mozilla Common Voice 21.0** (Romanian subset).
+ - Custom **Wasserstein GAN with Gradient Penalty (WGAN-GP)**
+ - Generates 192-dimensional synthetic embeddings from a 64-dimensional latent space
+ - Includes **diversity loss** to avoid mode collapse
+ - Trained on **Mozilla Common Voice 21.0** (Romanian subset)
 
 5. **Speech Synthesis with Prosody Transfer**
- - Uses **IMS-Toucan TTS** with **HiFi-GAN vocoder**.
- - Synthesizes anonymous voices while preserving timing, rhythm, and pitch.
+ - Uses **IMS-Toucan TTS** with **HiFi-GAN vocoder**
+ - Synthesizes anonymous voices while preserving timing, rhythm, and pitch
 
 6. **Visualization Tool**
- - Displays pitch contours, energy, duration, and cosine similarity before and after anonymization.
- - Includes parallel playback for original vs. anonymized speech.
+ - Displays pitch contours, energy, duration, and cosine similarity before and after anonymization
+ - Includes parallel playback for original vs. anonymized speech
 
 ## Key Results
 
@@ -83,10 +83,10 @@ The proposed approach represents a balance between **speaker privacy** and **lin
 
 ## Experimental Evaluation
 
-- GAN trained on **443 Romanian voices** (22 hours of speech).
-- Synthetic embeddings display strong anonymization and stable diversity.
-- Speech remains intelligible for human listeners while unrecognizable to ASR-based identification.
-- Processing speed: **~7.5 seconds per 5-second segment** on RTX 3060 GPU.
+- GAN trained on **443 Romanian voices** (22 hours of speech)
+- Synthetic embeddings display strong anonymization and stable diversity
+- Speech remains intelligible for human listeners while unrecognizable to ASR-based identification
+- Processing speed: **~7.5 seconds per 5-second segment** on RTX 3060 GPU
 
 ## Future Work
 
